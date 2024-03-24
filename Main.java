@@ -1,0 +1,38 @@
+package com.magicball;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Olá, se me procuras deves ter alguma dúvida.");
+        System.out.println("Como posso te ajudar?");
+
+        Scanner scan = new Scanner(System.in);
+        scan.next();
+        scan.close();
+
+        Random rand = new Random();
+        int r = rand.nextInt(8);
+
+        if (r == 0) {
+            System.out.println("Como posso ver, sim!");
+        } else if (r == 1) {
+            System.out.println("Os sinais apontam que sim.");
+        } else if (r == 2) {
+            System.out.println("Não conte com isso.");
+        } else if (r == 3) {
+            System.out.println("A perspectiva não é tão boa!");
+        } else if (r == 4) {
+            System.out.println("Creio que sim.");
+        } else if (r == 5) {
+            System.out.println("É melhor não.");
+        } else if (r == 6) {
+            System.out.println("Nem pensar!");
+        } else if (r == 7) {
+            System.out.println("Absolutamente sim!");
+        }
+
+    }
+
+}
